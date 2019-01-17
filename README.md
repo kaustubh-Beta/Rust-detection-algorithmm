@@ -1,14 +1,18 @@
-# AIR_Drums 
+# Rust Detection Algorithm
 
-### [View Video](https://www.youtube.com/watch?v=vsIh6W8XdUE)
-![Recordit GIF](Images/play_drums.gif) 
+![Recordit GIF](Images/ezgif.com-gif-maker.gif
+) 
 
-Augmented reality drums based on concepts of computer vision and image processing. 
-A fun application created to enable users to play virtual drums anywhere simply by using
-colour tags.
+The rust detection algorithm uses colour based image processing technique to detect and segment 
+the area region of metal affected by rust. I developed this code for my friend who was studying 
+the effect of a solution on different metals to preventing rusting.
 
->- You can use it for entertainment or can learn some key functions of opencv from this code. 
->- Refer a detailed [Tutorial](Tutorial.md) explaining the [code](Air_Drums.py).
+Using the algorithm it was easy to compare quantitively the nuber of pixels corresponding to
+rusted area of metal. Since the arrangement of camera while taking the image is fixed, comparision 
+directly in terms of pixels will work well.
+
+>- You can learn some key functions of opencv from this code. 
+>- Refer a detailed [Tutorial](Tutorial.md) explaining the [code](Rust_Detection.py).
 
 ---
 
@@ -18,17 +22,14 @@ colour tags.
 
 #### Clone
 
-- Clone this repo to your local machine using `https://github.com/kaustubh-Beta/AIR_Drums.git`
+- Clone this repo to your local machine using `https://github.com/kaustubh-Beta/Rust-detection-application.git`
 
 #### Setup/Requirements
 
 > The code is written in Python (`Python3`)
 > You need the following libraries
 > - numpy
-> - matplotlib
 > - OpenCV
-> - pygame
-
 ---
 
 ##### Refer the [Tutorial](Tutorial.md) for detailed explaination of the code.
