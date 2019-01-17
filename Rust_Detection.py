@@ -16,12 +16,12 @@ def rust_detect(file):
 	
 	# Range for lower red
 	lower_red = np.array([0,70,70])
-	upper_red = np.array([20,255,150])
+	upper_red = np.array([20,200,150])
 	mask0 = cv2.inRange(img_hsv, lower_red, upper_red)
 	
 	# range for upper red
 	lower_red = np.array([170,70,70])
-	upper_red = np.array([180,255,150])
+	upper_red = np.array([180,200,150])
 	mask1 = cv2.inRange(img_hsv, lower_red, upper_red)
 	
 	# add both masks
