@@ -9,7 +9,7 @@ We will try to understand each line of the [code](Air_Drums.py)
 > It makes the code easy to understand.
 
 
-#### Importing all the required libraries
+### Importing all the required libraries
 
 ```python
 import cv2
@@ -19,7 +19,7 @@ import os
 import glob
 ```
 
-#### Understanding the rust_detect() function 
+### Understanding the rust_detect() function 
 
 First we import the image and save it in form of an array.
 Since the setup for analysis and image capturing is fixed 
@@ -30,7 +30,7 @@ we do not need to worry about image resolution issue.
 A = cv2.imread(file)
 ```
 
-###### Converting image from BGR to HSV
+##### Converting image from BGR to HSV
 
 We convert the image into HSV colour space using the following line of code.
 ```python
@@ -43,7 +43,7 @@ Rusted area for this specific metal had a specific color range
 represent sever rusting). Using HSV(Hue-Saturation-Value) colour space we can dishtinguish 
 between different colours much accurately that we can in RGB colour space.
 
-###### Setting range of HSV values for rust detection
+##### Setting range of HSV values for rust detection
 Below code is used to detect pixels corresponding to rusted metal surface.
 ```python
 # Range for lower red
@@ -97,6 +97,6 @@ This is also a simple example of operator overloading of `+`.
 
 
 
-###### Calculating the number of rust pixels
+##### Calculating the number of rust pixels
 To calculate the total pixesl corresponding to rusted metal region 
 we simply find the number of white pixels in the final mask.
