@@ -12,8 +12,6 @@ count = 0
 
 def rust_detect(file):
 	A = cv2.imread(file)
-	img = cv2.resize(A,(800,600),interpolation=3)
-	#img = cv2.resize(A,None,fx=0.3,fy=0.2,interpolation = cv2.INTER_CUBIC)
 	img_hsv=cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 	
 	# lower mask (0-10)
