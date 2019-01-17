@@ -29,10 +29,7 @@ def rust_detect(file):
 	
 	output_img = cv2.bitwise_and(img,img,mask=mask)
 	
-	gry = cv2.cvtColor(output_img,cv2.COLOR_BGR2GRAY)
-	_,gry = cv2.threshold(gry,10,255,cv2.THRESH_BINARY)
-	
-	print("\n\n\n Number of pixels depicting rust \n >> %d"%(np.sum(gry)/255))
+	print("\n\n\n Number of pixels depicting rust \n >> %d"%(np.sum(mask)/255))
 	cv2.imshow('image1',output_img)
 	cv2.imshow('image2',img)
 	cv2.waitKey(0)
