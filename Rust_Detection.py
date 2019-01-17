@@ -14,17 +14,17 @@ def rust_detect(file):
 	A = cv2.imread(file)
 	img_hsv=cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 	
-	# lower mask (0-10)
+	# Range for lower red
 	lower_red = np.array([0,70,70])
-	upper_red = np.array([40,255,255])
+	upper_red = np.array([20,255,150])
 	mask0 = cv2.inRange(img_hsv, lower_red, upper_red)
 	
-	# upper mask (170-180)
+	# range for upper red
 	lower_red = np.array([220,70,70])
-	upper_red = np.array([255,255,255])
+	upper_red = np.array([255,255,150])
 	mask1 = cv2.inRange(img_hsv, lower_red, upper_red)
 	
-	# join my masks
+	# add both masks
 	mask = mask0+mask1
 	
 	output_img = cv2.bitwise_and(img,img,mask=mask)
