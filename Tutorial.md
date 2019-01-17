@@ -37,10 +37,10 @@ We convert the image into HSV colour space using the following line of code.
 img_hsv=cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 ```
 `Why transform the image into HSV colour space ??`
-Because the algorithm detects the rust based on its property of color.
-Rusted area for this specific metal had a specific color range
-(`Gray-brown` represent lower level of rust while `Dark redish-brown` 
-represent sever rusting). Using HSV(Hue-Saturation-Value) colour space we can dishtinguish 
+Because the algorithm detects the rust based on its property of colour.
+Rusted area for this specific metal had a specific colour range
+(`grey-brown` represent lower level of rust while `Dark reddish-brown` 
+represent sever rusting). Using HSV(Hue-Saturation-Value) colour space we can distinguish 
 between different colours much accurately that we can in RGB colour space.
 
 #### Setting range of HSV values for rust detection
@@ -62,7 +62,7 @@ Hue range | 0-20 | 170-180
 ---|---|---
 
 >The Hue values actually range between 0-360 degrees but
->in OpenCV to fit into 8bit vlaue the range is from 0-180.
+>in OpenCV to fit into 8bit value the range is from 0-180.
 >Red colour is represented by 0-20 and 170-180 values.
 
 
@@ -75,7 +75,7 @@ Saturation range | 70-200
 Value range | 70-150
 ---|---
 > Value corresponds to the brightness of the image. For a given pixel if the value is increased or 
-> decreased then values of R,G and B will increas or decrease respectively but their percentage 
+> decreased then values of R,G and B will increase or decrease respectively but their percentage 
 >contribution will remain unchanged.
 
 Now we understand why we need to convert to HSV colour space.
