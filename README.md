@@ -4,11 +4,11 @@
 ) 
 
 The rust detection algorithm uses colour based image processing technique to detect and segment 
-the area region of metal affected by rust. I developed this code for my friend who was studying 
+the region of metal affected by rust. I developed this code for my friend who was studying 
 the effect of a solution on different metals to preventing rusting.
 
-Using the algorithm it was easy to compare quantitively the nuber of pixels corresponding to
-rusted area of metal. Since the arrangement of camera while taking the image is fixed, comparision 
+Using the algorithm, it was easy to compare the number of pixels corresponding to
+rusted area of metal. Since the arrangement of camera while taking the image is fixed, comparison 
 directly in terms of pixels will work well.
 
 >- You can learn some key functions of opencv from this code. 
@@ -32,7 +32,7 @@ directly in terms of pixels will work well.
 > - OpenCV
 ---
 
-##### Refer the [Tutorial](Tutorial.md) for detailed explaination of the code.
+##### Refer the [Tutorial](Tutorial.md) for detailed explanation of the code.
 
 
 
