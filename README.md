@@ -22,7 +22,7 @@ directly in terms of pixels will work well.
 
 #### Clone
 
-- Clone this repo to your local machine using `https://github.com/kaustubh-Beta/Rust-detection-application.git`
+- Clone this repo to your local machine using `https://github.com/kaustubh-Beta/Rust-detection-algorithmm.git`
 
 #### Setup/Requirements
 
