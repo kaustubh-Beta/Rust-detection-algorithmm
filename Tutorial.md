@@ -41,7 +41,7 @@ Because the algorithm detects the rust based on its property of colour.
 Rusted area for this specific metal had a specific colour range
 (`grey-brown` represent lower level of rust while `Dark reddish-brown` 
 represent sever rusting). Using HSV(Hue-Saturation-Value) colour space we can distinguish 
-between different colours much accurately that we can in RGB colour space.
+between different colours much accurately than we can in RGB colour space.
 
 #### Setting range of HSV values for rust detection
 Below code is used to detect pixels corresponding to rusted metal surface.
